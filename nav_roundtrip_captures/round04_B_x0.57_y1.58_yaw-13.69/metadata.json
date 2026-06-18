@@ -1,0 +1,83 @@
+{
+  "navigation": {
+    "round_index": 4,
+    "point_name": "B",
+    "goal_id": "roundtrip_004_B_1781767538",
+    "target": {
+      "x": 0.97,
+      "y": -0.5,
+      "z": 0.0,
+      "yaw_degree": 12.65
+    },
+    "result": {
+      "reached": true,
+      "code": 0,
+      "message": "Goal succeeded.",
+      "status": {
+        "code": 0,
+        "message": "Goal succeeded.",
+        "source_node": "navigation_node",
+        "recoverability": "none",
+        "details_json": ""
+      }
+    },
+    "error": {
+      "dx": -0.3992031819793783,
+      "dy": 2.081492736784554,
+      "distance_m": 2.1194280345860563,
+      "yaw_degree": -26.340267619149813
+    }
+  },
+  "image": {
+    "file": "image.jpg",
+    "topic": "/cameras/head/rgb/image_raw",
+    "type": "sensor_msgs/msg/Image",
+    "encoding": "bgr8",
+    "frame_id": "head_color_optical_frame",
+    "stamp": {
+      "sec": 9157,
+      "nanosec": 189761718
+    }
+  },
+  "pose": {
+    "target_frame": "map",
+    "source_frame": "rbs_base_link",
+    "translation": {
+      "x": 0.5707968180206217,
+      "y": 1.581492736784554,
+      "z": -0.36409834502377664
+    },
+    "rotation_quaternion": {
+      "x": -0.017887615154310154,
+      "y": 0.0007942448450263733,
+      "z": -0.1191908352588907,
+      "w": 0.9927099008217383
+    },
+    "rotation_rpy_degree": {
+      "roll": -2.0461169523568383,
+      "pitch": -0.15396369311360644,
+      "yaw": -13.690267619149827
+    },
+    "tf_stamp": {
+      "sec": 1774975253,
+      "nanosec": 360074000
+    }
+  },
+  "summary": {
+    "target": {
+      "x": 0.97,
+      "y": -0.5,
+      "yaw_degree": 12.65
+    },
+    "actual": {
+      "x": 0.57,
+      "y": 1.58,
+      "yaw_degree": -13.69
+    },
+    "error": {
+      "distance_m": 2.1194,
+      "yaw_degree": -26.34
+    }
+  },
+  "created_at": "2026-06-18T15:25:55+0800"
+}

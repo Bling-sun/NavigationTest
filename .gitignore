@@ -1,0 +1,12 @@
+# Python virtualenv (machine-specific, do not commit)
+nav_env/
+
+# Python caches
+__pycache__/
+*.pyc
+*.pyo
+
+# Editor / OS
+.DS_Store
+.vscode/
+.idea/
