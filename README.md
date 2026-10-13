@@ -1,4 +1,4 @@
-# 机器人导航重复定位精度测试
+# NavigationTest
 
 本项目用于评估机器人 A/B 点循环导航的重复定位精度,提供两个独立指标:
 
@@ -11,10 +11,17 @@
 
 ---
 
+## 获取代码
+
+```bash
+git clone https://github.com/Bling-sun/NavigationTest.git
+cd NavigationTest
+```
+
 ## 目录结构
 
 ```
-nav_test/
+NavigationTest/
 ├── nav_env/                              # Python 虚拟环境 自行创建
 ├── run_nav_roundtrip_capture.py          # 数据录制脚本样例 (ROS2)，自行替换
 ├── calculate_accuracy.py                 # 视觉重复定位精度
@@ -43,7 +50,7 @@ nav_test/
 ### 1.2 创建 Python 虚拟环境
 
 ```bash
-cd /nav_test
+cd NavigationTest
 python3 -m venv nav_env
 source nav_env/bin/activate
 ```
@@ -66,7 +73,7 @@ source /opt/ros/<distro>/setup.bash
 source <你的 rbs_msgs 工作空间>/install/setup.bash
 ```
 
-录制脚本还需要项目内的 `capture_nav_pose_image` 模块(被 `run_nav_roundtrip_capture.py` import),它提供 `CaptureNode` / `wait_for_first_image` / `safe_name`。
+录制脚本还需要外部的 `capture_nav_pose_image` 模块（当前仓库未包含，需从机器人平台工作空间提供）(被 `run_nav_roundtrip_capture.py` import),它提供 `CaptureNode` / `wait_for_first_image` / `safe_name`。
 
 ---
 
@@ -171,7 +178,7 @@ POINT_B = NavPoint("B", 0.97, -0.5, 12.65)
 
 ### 4.1 启动
 
-**启动前要把录制好的数据拷贝替换到 nav_test 目录下。**
+**启动前要把录制好的数据拷贝替换到 NavigationTest 目录下。**
 
 ```bash
 source nav_env/bin/activate
